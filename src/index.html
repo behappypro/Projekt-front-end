@@ -1,0 +1,132 @@
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Demo Gulp</title>
+    </head>
+    <body>
+        <nav>
+            <button class="ham">
+                <span class="menuIcon material-icons"><i class="fa fa-bars"></i>
+                </span>
+                <span class="xIcon material-icons">
+                  X
+                </span>
+            </button>
+
+            <div class="menu">
+                <a class="menu-item" href="index.html">Projekt</a>
+                <span class="nav-desc">Se lästa kurser</span>
+                <a class="menu-item" href="#">Kontakt</a>
+                <span class="nav-desc">Kontakta mig</span>
+                <a class="menu-item" href="cv.html">CV</a>
+                <span class="nav-desc">Läs mitt CV</span>
+                <a class="menu-item" href="http://localhost/projekt-admin/admin-projects.php">Admin</a>
+                <span class="nav-desc">Logga in på admin</span>
+            </div>
+        </nav>
+
+        <div id="header-container">
+            <div id="header-desc">
+                <h1>Studier</h1>
+                <p>Nedan listas kurser jag läst</p>
+            </div>
+            
+            <div id="header-image"></div>
+        </div>
+
+        <main>
+            <div id="site-content">
+                <div class="divider"><span></span><span>Projekt</span><span></span></div>
+                <div class="grid-container">
+                    <div class="pages">
+                        <a href="http://studenter.miun.se/~asha1900/DT162G/moment1/" target="_blank"><img src="./images/page1.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">DT162G</h3>
+                        <p class="page-desc">JavaScriptbaserad webbutveckling</p>
+                    </div>
+                    <div class="pages">
+                        <a href="http://studenter.miun.se/~asha1900/gd008g/moment5/" target="_blank"><img src="./images/page2.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">gd008g</h3>
+                        <p class="page-desc">Typografi och form för webb</p>
+                    </div>
+                    <div class="pages">
+                        <a href="http://studenter.miun.se/~asha1900/gd008g/moment4/" target="_blank"><img src="./images/page3.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">gd008g</h3>
+                        <p class="page-desc">Typografi och form för webb</p>
+                    </div>
+                    <div class="pages">
+                        <a href="http://studenter.miun.se/~asha1900/gd008g/moment2/" target="_blank"><img src="./images/page4.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">gd008g</h3>
+                        <p class="page-desc">Typografi och form för webb</p>
+                    </div>
+                    <div class="pages">
+                        <a href="http://studenter.miun.se/~asha1900/dt173g/moment3/" target="_blank"><img src="./images/page5.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">dt173g</h3>
+                        <p class="page-desc">Webbutveckling III</p>
+                    </div>
+                    <div class="pages">
+                        <a href="https://class-grader.herokuapp.com" target="_blank"><img src="./images/page6.png" alt="Example page" width="350" height="400"></a>
+                        <h3 class="page-title">DT162G</h3>
+                        <p class="page-desc">JavaScriptbaserad webbutveckling</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="footer-container">
+                 <section>
+                    <h3>Länkar</h3>
+                    <ul>
+                        <li><a href="#">Studier</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">CV</a></li>
+                    </ul>
+                 </section>
+
+                 <section>
+                    <h3>Om mig</h3>
+                    <p>Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit. 
+                    Facilis quas nisi ratione earum nesciunt 
+                    placeat atque consequatur. Dolor sit dipisicing elit.</p>
+                </section>
+
+                <section>
+                     <h3>Hitta hit</h3>
+                     <span><svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
+                    </svg>Påhittvägen 25, Stockholm</span>
+                    <span><svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+                    </svg>Ashraf.hamadi@miun.se</span>
+                    <span><svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M13.372,1.781H6.628c-0.696,0-1.265,0.569-1.265,1.265v13.91c0,0.695,0.569,1.265,1.265,1.265h6.744c0.695,0,1.265-0.569,1.265-1.265V3.045C14.637,2.35,14.067,1.781,13.372,1.781 M13.794,16.955c0,0.228-0.194,0.421-0.422,0.421H6.628c-0.228,0-0.421-0.193-0.421-0.421v-0.843h7.587V16.955z M13.794,15.269H6.207V4.731h7.587V15.269z M13.794,3.888H6.207V3.045c0-0.228,0.194-0.421,0.421-0.421h6.744c0.228,0,0.422,0.194,0.422,0.421V3.888z"></path>
+                    </svg>08 654 245 23 4</span>
+                </section>
+
+                <section>
+                    
+                        <h3 class="footer-heading">Kontakta oss</h3>
+                
+                        <form>
+                            Email<br>
+                            <input type="email" required=""><br>
+        
+                            Meddelande<br>
+                            <textarea rows="2" cols="23" required=""></textarea>
+                            <br><br>
+                            <button id="submit-button" type="submit">Skicka</button>
+                        </form>  
+
+              
+                </section>
+            </div>
+        </footer>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
