@@ -17,7 +17,7 @@ function getEmployment(){
           outPut +=`
           <div class="card">
           <div class="inner">
-          <h2 clas="title">${post.place}</h2>
+          <h2 class="title">${post.place}</h2>
           <p>${post.title}</p>
           <p class="subtitle">${post.start_year} - ${post.end_year} </p>
           </div>
