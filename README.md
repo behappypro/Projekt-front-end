@@ -1,6 +1,6 @@
-# Moment-2-Gulp
+#Projekt
 
-Detta moment bygger på automatisering genom GULP.
+Detta projekt bygger på automatisering genom GULP.
 Automatisering är att vi skriver kod för att datorn skall utföra vissa task åt oss automatiskt. Detta är praktiskt om vi exempelvis vill att alla bilder skall komprimeras utan att vi gör någonting. Då kan vi installera en metod som automatiserar denna process åt oss. 
 
 OBS! Många av de funktioner som använts är tagna från föreläsningen för Moment 2.
