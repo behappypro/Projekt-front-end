@@ -1,21 +1,22 @@
 #Projekt
 
-Detta projekt bygger på automatisering genom GULP.
+Detta projekt bygger på automatisering genom GULP för att konsumera en webbtjänst.
 Automatisering är att vi skriver kod för att datorn skall utföra vissa task åt oss automatiskt. Detta är praktiskt om vi exempelvis vill att alla bilder skall komprimeras utan att vi gör någonting. Då kan vi installera en metod som automatiserar denna process åt oss. 
 
-OBS! Många av de funktioner som använts är tagna från föreläsningen för Moment 2.
-
-Detta GULP-moment Innehåller följande paket:
+Detta projekt Innehåller följande paket:
 
 * gulp-concat
 * gulp-terser
 * gulp-cssnano
 * gulp-imagemin
 * gulp-livereload
+* gulp-sass
+* browsersync
+* changed
 
-Jag har valt dessa paket för vissa av dessa paket var som krav för uppgiften men andra lades till för utforska mer med vad gulp kunde automatisera.
+Jag har valt dessa paket för dessa var som rekommendation för uppgiften men andra lades även till för att utöka funktionalitet.
 
-Nedanstående är funktioner och metoder som detta moment använder:
+Nedanstående är funktioner och metoder som detta projekt använder:
 
 ```
 const files = {
@@ -24,6 +25,7 @@ const files = {
     cssPath: "src/css/*.css",
     jsPath: "src/js/*.js",
     imagePath: "src/images/*"
+    sassPath: "src/sass/*.scss",
 }
 ```
 
@@ -63,6 +65,28 @@ function jsTask(){
 ```
 
 ```
+function sassTask(){
+    return src(files.sassPath)
+        .pipe(browserSync.stream())
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
+        .pipe(concat('style.css'))
+        .pipe(sourcemaps.write('./maps'))
+        .pipe(changed('pub/css', {hasChanged: changed.compareContents}))
+        .pipe(dest('pub/css'))
+    }
+```
+
+```
+function imageTask(){
+    return src(files.imagePath)
+    // Komprimerar bilder
+    .pipe(imagemin())
+    .pipe(dest('pub/images'));
+}
+```
+
+```
 function watchTask(){
     // Event som lyssnar efter uppdatering
     livereload.listen();
@@ -79,23 +103,10 @@ exports.default = series(
 );
 ```
 
-### Extra funktion
-
-Denna funktion lades till som extra för att testa hur komprimering av bilder kan användas.
-
-```
-function imageTask(){
-    return src(files.imagePath)
-    // Komprimerar bilder
-    .pipe(imagemin())
-    .pipe(dest('pub/images'));
-}
-```
-
 ### Installation
 
 * Installera Gulp lokalt/globalt på datorn genom kommandot npm install --global gulp-cli
-* Installera alla paket från package.json med kommandot npm install
+* Installera alla paket från package.json med kommandot *npm install*
 * För att starta automatiseringen och optimeringen kan kommandot gulp anropas i terminalen ståendes i projektets mapp.
 * Den färdiga webbsidan skickas till mappen pub och kan användas för publicering på lokal server.
 
