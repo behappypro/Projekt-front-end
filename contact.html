@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>CV</title>
+        <title>Kontakt</title>
     </head>
     <body>
         <nav>
@@ -24,6 +24,7 @@
                 <span class="nav-desc">Se portfolio</span>
                 <a class="menu-item" href="contact.html">Kontakt</a>
                 <span class="nav-desc">Kontakta mig</span>
+                
                 <a class="menu-item" href="http://studenter.miun.se/~asha1900/dt173g/cms/admin/login.php">Admin</a>
                 <span class="nav-desc">Logga in på admin</span>
             </div>
@@ -31,8 +32,8 @@
 
         <div id="header-container">
             <div id="header-desc">
-                <h1>CV</h1>
-                <p>Läs mitt CV nedan</p>
+                <h1>Kontakt</h1>
+                <p>Kontakta mig nedan</p>
             </div>
             
             <div id="header-image"></div>
@@ -40,92 +41,19 @@
 
         <main>
             <div id="site-content">
-                <div class="divider"><span></span><span>Om mig</span><span></span></div>
-                <div id="about-me">
-                    <h2>Beskrivning</h2>
-                    <p>Ashraf är väldigt intresserad av andra kulturer därav blir matlagningen en stor del av hans vardag. Detta hjälper Ashraf att utrycka all sin kreativitet, och det gör honom även till en bra middagsvärd för vänner och familj. Ashraf försöker spendera tid i gymmet med vänner och är en stor beundrare av datorspel där han försöker spela online-spel med vänner runt om i världen. På fritiden väljer Ashraf att vidarutbilda sig inom ämnen som han finner intressanta som nätverk och webbutveckling. En stor hobby för Ashraf är att följa teknikpoddar online samt följa senaste teknikutvecklingen och trender för att hålla sig uppdaterad. </p>
-                </div>
-
-                <div id="contact-me">
-                    <h2>Kontakt</h2>
-                    <p><span>Ålder</span> : 25</p>
-                    <p><span>Email</span> : <a href="mailto:asha1900@student.miun.se">asha1900@student.miun.se</a></p>
-                    <p><span>Telefon</span>: +46 754 945 34</p>
-                    <p><span>Webbsida</span>: <a href="http://studenter.miun.se/~asha1900/">MIUN</a></p>
-                    <p><span>Github</span>: <a href="https://github.com/behappypro">Behappypro</a></p>
-                </div>
-                <hr>
-                <div class="divider"><span></span><span>Utbildning</span><span></span></div>
-                <div id="education">
-                    <div class="timeline">
-                        <div class="container right">
-                            <div class="content">
-                              <h2>2020-pågående</h2>
-                              <span>Mittuniversitetet</span>
-                              <p>Webbutveckling</p>
-                            </div>
-                          </div>
-                          <div class="container right">
-                            <div class="content">
-                              <h2>2016-2016</h2>
-                              <span>Thorildsplans Gymnasium</span>
-                              <p>CCNA Instructor </p>
-                            </div>
-                          </div>
-                        <div class="container right">
-                          <div class="content">
-                            <h2>2015-2018</h2>
-                            <span>Mälardalens högskola</span>
-                            <p>Högskoleingenjörs­programmet i nätverksteknik</p>
-                          </div>
-                        </div>
-                        <div class="container right">
-                          <div class="content">
-                            <h2>2012-2015</h2>
-                            <span>Thorildsplans Gymnasium</span>
-                            <p>Teknik - informations och medieteknik</p>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="divider"><span></span><span>Branscherfarenhet</span><span></span></div>
-
-                <div id="employment">
-
-                    <div class="card">
-                        <div class="inner">
-                            <h2 class="title">Telecom</h2>
-                            <p>Universal telecom</p>
-                            <p class="subtitle">Jan 2014- Maj 2014<p>
-                          </div>
-                    </div>
-                   
-                    <div class="card card2">
-                        <div class="inner">
-                          <h2 class="title">Offentlig verksamhet</h2>
-                          <p>Gymnasium</p>
-                          <p class="subtitle">Feb 2018 - pågående<p>
-                        </div>
-
-                    </div>
-
-                    <div class="card card3">
-                        <div class="inner">
-                          <h2 class="title">Webbutvecklare</h2>
-                          <p>Egen verksamhet</p>
-                          <p class="subtitle">Aug 2019 - pågående<p>
-                        </div>
-
-                    </div>
-
-
-
-
-
-                </div>
-
-
+                <div class="divider"><span></span><span>Kontakt</span><span></span></div>
+                <form id="contact-form">
+                    <label for="name">Namn <span class="required-star">*</span></label>
+					<input type="text" id="name" name="name">
+					<label for="email">Email <span class="required-star">*</span></label>
+					<input name="email" id="email" type="email" tabindex="2" required>
+					<label for="message">Meddelande <span class="required-star">*</span></label>
+					<textarea name="message" id="message" tabindex="5" required ></textarea>
+					<input type="submit" value="Skicka">
+                </form>
+            
             </div>
+                
         </main>
 
         <footer>
