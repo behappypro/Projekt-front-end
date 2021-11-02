@@ -1,4 +1,4 @@
-## DT173G Projekt
+# DT173G Projekt
 
 Detta projekt bygger på automatisering genom GULP för att konsumera en webbtjänst.
 Automatisering är att vi skriver kod för att datorn skall utföra vissa task åt oss automatiskt. Detta är praktiskt om vi exempelvis vill att alla bilder skall komprimeras utan att vi gör någonting. Då kan vi installera en metod som automatiserar denna process åt oss. 
